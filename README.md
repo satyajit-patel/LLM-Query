@@ -1,32 +1,54 @@
-# Project Name
+# LLM Query System
 
-This repository contains both a Flask backend and a React frontend application. Below are the instructions for setting up and running both projects.
+An interactive system that retrieves web content based on user queries, processes the text, and generates AI-driven responses using a large language model (LLM).
 
-## Backend (Flask)
+## 🌐 Live Demo
+[Live URL](https://llm-front-git-master-satyajit-patels-projects.vercel.app/)
 
-### Prerequisites
+## 🚀 Features
+1. **Content Retrieval**: Searches the web, retrieves top relevant web pages, and extracts meaningful text.
+2. **Text Processing**: Processes content to generate coherent input for the LLM.
+3. **Response Generation**: Uses a language model to generate responses based on the query and processed text.
+4. **Interactive Front-End**: User-friendly interface for inputting queries and receiving responses.
 
-- Python 3.x
-- pip (Python package manager)
+## 🛠️ Tech Stack
+### Frontend:
+- **React**
+- **Tailwind CSS**
+- **Vite**
 
-### Setup
+### Backend:
+- **Flask**
+- **BeautifulSoup (for web scraping)**
+- **OpenAI API**
 
-1. **Clone the Repository**
+## 📝 How to Run
 
-   ```
-
-git clone https://github.com/satyajit-patel/llm-back.git
-cd llm-back
-
-python -m venv .venv
-.venv\Scripts\activate
-pip install -r requirements.txt
-API_KEY=your_google_api_key
-flask --app index run --host=0.0.0.0 --port=5000
-
-git clone <frontend-repo-url>
-cd <frontend-repo-directory>
-npm install
-npm run dev
+### Frontend (React):
 ```
+1. Clone the repository:
+   git clone https://github.com/satyajit-patel/LLM-Query.git
+
+2. Navigate to the backend directory:
+   cd llm-back
+
+3. Activate virtual environment and install dependencies and run:
+   python -m venv venv
+   venv\Scripts\activate
+   pip install -r requirements.txt
+   flask --app index run
+```
+
+### Backend (Flask):
+```
+1. Clone the repository:
+   git clone https://github.com/satyajit-patel/LLM-Query.git
+2. install dependencies and run it
+   npm install
+   nnpm run dev
+
+
+
+
+
 
