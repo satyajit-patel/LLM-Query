@@ -11,9 +11,11 @@ const SearchPage = () => {
     setLoading(true);
     setError('');
     try {
-      const result = await axios.post(`${import.meta.env.VITE_URL}/generate`, { query });
+      // const result = await axios.post(`${import.meta.env.VITE_GLOBAL}/generate`, { query });
+      const result = await axios.post(`https://llm-back-1.onrender.com/generate`, { query });
       setResponse(result.data.response);
     } catch (err) {
+      console.log(err.message);
       setError('An error occurred while fetching the response.');
     } finally {
       setLoading(false);
