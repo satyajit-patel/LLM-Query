@@ -24,7 +24,7 @@ An interactive system that retrieves web content based on user queries, processe
 
 ## 📝 How to Run
 
-### Frontend (React):
+### Backend (Flask):
 ```
 1. Clone the repository:
    git clone https://github.com/satyajit-patel/LLM-Query.git
@@ -39,13 +39,13 @@ An interactive system that retrieves web content based on user queries, processe
    flask --app index run
 ```
 
-### Backend (Flask):
+### Frontend (React):
 ```
 1. Clone the repository:
    git clone https://github.com/satyajit-patel/LLM-Query.git
 2. install dependencies and run it
    npm install
-   nnpm run dev
+   npm run dev
 
 
 
